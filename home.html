@@ -1,0 +1,386 @@
+﻿<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Dropdown Menu</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <header>
+            <a href="home.html" class="logo"><img src="Pictures\logo.PNG"></a>
+            <div class="navigation">
+                <ul class="menu">
+                    <div class="close-btn"><i class="fa-solid fa-xmark"></i></div>
+                    <li class="menu-item"><a href="home.html">Home</a></li>
+                    <li class="menu-item"><a href="about.html">About Us</a></li>
+                    <li class="menu-item"><a class="sub-btn" href="#">Services <i class="fa-solid fa-caret-down"></i></a>
+                        <ul class="sub-menu">
+                            <li class="sub-item"><a href="Financial-Consulting.html">Financial Consulting</a></li>
+                            <li class="sub-item"><a href="investment-Opportunities.html">Investment Opportunities</a></li>
+                            <li class="sub-item"><a href="investment-Strategies.html">Investment Strategies</a></li>
+                            <li class="sub-item more"><a class="more-btn" href="#">Stock Market Data <i class="fa-solid fa-caret-right"></i></a>
+                                <ul class="more-menu">
+                                    <li class="more-item"><a href="JSE_Stock_Screener.html">JSE Stock Screener</a></li>
+                                    <li class="more-item"><a href="NYSE_Stock_Screener.html">NYSE Stock Screener</a></li>
+                                </ul>
+                            </li>
+                            <li class="sub-item"><a href="#">Market Research</a></li>
+                            <li class="sub-item more"><a class="more-btn" href="#">Investment Tools <i class="fa-solid fa-caret-right"></i></a>
+                                <ul class="more-menu">
+                                    <li class="more-item"><a href="Stock-Heatmap.html">Stock Heatmap</a></li>
+                                    <li class="more-item"><a href="Currency-Converter.html">Currency Converter</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu-item"><a href="news.html">News</a></li>
+                    <li class="menu-item"><a href="education.html">Education</a></li>
+                    <li class="menu-item"><a href="contact.html">Contact Us</a></li>
+                    <li class="menu-item"><button class="btnLogin" id="logout">Logout</button></li>
+                </ul>
+            </div>
+            <div class="menu-btn"><i class="fa-sharp fa-solid fa-bars"></i></div>
+        </header>
+        
+        <section class="slide-stock">
+            <!-- TradingView Widget BEGIN -->
+            <div class="tradingview-widget-container">
+                <div class="tradingview-widget-container__widget"></div>
+                <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>  {
+                        "symbols": [
+                            {
+                                "description": "SHOPRITE HOLDINGS",
+                                "proName": "JSE:SHP"
+                            },
+                            {
+                                "description": "WOOLWORTHS HOLDINGS LTD",
+                                "proName": "JSE:WHL"
+                            },
+                            {
+                                "description": "CAPITEC BANK HLDGS LTD",
+                                "proName": "JSE:CPI"
+                            },
+                            {
+                                "description": "MTN GROUP LTD",
+                                "proName": "JSE:MTN"
+                            },
+                            {
+                                "description": "ABSA GROUP LIMITED",
+                                "proName": "JSE:ABG"
+                            },
+                            {
+                                "description": "SASOL LIMITED",
+                                "proName": "JSE:SOL"
+                            },
+                            {
+                                "description": "MR PRICE GROUP LTD",
+                                "proName": "JSE:MRP"
+                            },
+                            {
+                                "description": "THE FORSCHINI GROUP LIMITED",
+                                "proName": "JSE:TFG"
+                            },
+                            {
+                                "description": "PICK N PAY STORES LTD",
+                                "proName": "JSE:PIK"
+                            },
+                            {
+                                "description": "VODACOM GROUP LTD",
+                                "proName": "JSE:VOD"
+                            },
+                            {
+                                "description": "MASTERCARD INCORPORATED",
+                                "proName": "NYSE:MA"
+                            },
+                            {
+                                "description": "ALIBABA GROUP HOLDING LIMITED",
+                                "proName": "NYSE:BABA"
+                            },
+                            {
+                                "description": "WALT DISNEY COMPANY (THE)",
+                                "proName": "NYSE:DIS"
+                            },
+                            {
+                                "description": "ORACLE CORPORATION",
+                                "proName": "NYSE:ORCL"
+                            },
+                            {
+                                "description": "UBER TECHNOLOGIES, INC.",
+                                "proName": "NYSE:UBER"
+                            },
+                            {
+                                "description": "CATERPILLAR, INC.",
+                                "proName": "NYSE:CAT"
+                            },
+                            {
+                                "description": "MCDONALD'S CORPORATION",
+                                "proName": "NYSE:MCD"
+                            },
+                            {
+                                "description": "NIKE, INC.",
+                                "proName": "NYSE:NKE"
+                            },
+                            {
+                                "description": "WALMART, INC.",
+                                "proName": "NYSE:WMT"
+                            },
+                            {
+                                "description": "FORD MOTOR COMPANY",
+                                "proName": "NYSE:F"
+                            }
+                        ],
+                            "showSymbolLogo": true, "colorTheme": "light", "isTransparent": false, "displayMode": "adaptive",  "locale": "en"
+                    }
+                </script>
+            </div>
+            <!-- TradingView Widget END -->
+        </section>
+        
+        <section class="home">
+            <div class="container-1">
+            <br><br><br><br><br><br><br>
+            <h1>SAAGROEG TRADING GROUP</h1>
+            <br>
+            <p>A leading financial consulting company specializing in providing clients with profitable financial information and investment opportunities in the New York and Johannesburg stock exchanges.</p>
+            <br>
+            <p>Our team of experienced financial advisors is dedicated to helping clients achieve their financial goals through customized investment strategies, exceptional service, and industry-leading expertise</p>
+            <br>
+            <a href="about.html"><button class="btnRead">Read More</button></a>
+        </div>
+        </section>
+        
+        <!----------Services------->
+    <section class="services">
+        <h1>WHAT WE DO</h1>
+        <div class="row">
+            <div class="service-col">
+                <h3 style="color: white">Financial Consulting</h3>
+                <p> SAAGROEG Trading Group specializes in providing financial consulting services to clients seeking profitable investment opportunities in the New York and Johannesburg stock exchanges.</p>
+                <a href="Financial-Consulting.html" style="color: white">Read More>></a>
+            </div>
+            <div class="service-col">
+                <h3 style="color: white">Investment Opportunities</h3>
+                <p> The company offers customized investment opportunities to clients based on their financial goals and investment preferences.</p>
+                <a href="investment-Opportunities.html" style="color: white">Read More>></a>
+            </div>
+            <div class="service-col">
+                <h3 style="color: white">Investment Strategies</h3>
+                <p> SAAGROEG Trading Group's team of experienced financial advisors offers customized investment strategies to clients, designed to help them achieve their financial goals.</p>
+                <a href="investment-Strategies.html" style="color: white">Read More>></a>
+            </div>
+        </div>
+        <div class="row2">
+            <div class="service-col">
+                <h3 style="color: white">Stock Market Data</h3>
+                <p>We provide real-time stock market data feed in a form of stock screeners, which will redirect you to TradingView when you click on the company symbol or logo to track stock prices, view charts, and graphs.</p>
+                <a href="JSE_Stock_Screener.html" style="color: white">JSE Stock Screener</a><br>
+                <a href="NYSE_Stock_Screener.html" style="color: white">NYSE Stock Screener</a>
+            </div>
+            <div class="service-col">
+                <h3 style="color: white">Market Research</h3>
+                <p>We provide detailed research on the JSE and NYSE, including historical performance data, sector analysis, and market trends. This will help you to understand the market dynamics and make informed investment decisions.</p>
+                <a href="#" style="color: white">Read More>></a>
+            </div>
+            <div class="service-col">
+                <h3 style="color: white">Investment Tools</h3>
+                <p>We offer a range of investments tools to help you make informed investment decisions, such as Stock Heatmap, and Currency Converter.</p>
+                <a href="Stock-Heatmap.html" style="color: white">Stock Heatmap</a><br>
+                <a href="Currency-Converter.html" style="color: white">Currency Converter</a>
+            </div>
+        </div>
+    </section>
+        
+        
+        <!----------Investment Education------->
+    <section class="investment">
+        <h1>INVESTMENT EDUCATION</h1>
+        <div class="row">
+            <div class="investment-col">
+                <img src="Pictures\Net.jpg">
+                <div class="layout1">
+                    <p>14 September 2023</p>
+                    <h3>How Do I Know if I Have Enough Money to Retire?</h3>
+                    <p>How Do I Know if I have Enough Money to Retire? Because there are so many factors to consider, judging whether you have enough money...</p>
+                    <a href="How-Do-I-Know-if-I-Have-Enough-Money-to-Retire.html">Read More>></a>
+                    <br><br>
+                </div>
+            </div>
+            <div class="investment-col">
+                <img src="Pictures\Investment.jpg">
+                <div class="layout1">
+                    <p>28 August 2023</p>
+                    <h3>Top 8 Tips to Strengthen Your Financial Position in 2023</h3>
+                    <p>Top 8 Tips to Strengthen Your Financial Position in 2023. Many of us will start thinking about what we want to achieve in the new</p>
+                    <a href="Top-8-Tips-to-Strengthen-Your-Financial-Position-in-2023.html">Read More>></a>
+                    <br><br>
+                </div>
+            </div>
+            <div class="investment-col">
+                <img src="Pictures\Money.jpg">
+                <div class="layout1">
+                    <p>14 August 2023</p>
+                    <h3>How Much Money Do I Have to Invest for It to Be Worth It?</h3>
+                    <p>How Much Money Do I Have to Invest for It to Be Worth It? Anyone who wants to strengthen their financial position should know that investing is vital for making…</p>
+                    <a href="How-Much-Money-Do-I-Have-to-Invest-for-It-to-Be-Worth-It.html">Read More>></a>
+                    <br><br>
+                </div>
+            </div>
+        </div>
+        <a href="education.html"><button class="btnView">View More</button></a>
+    </section>
+        
+        <!----------News------->
+    <section class="news">
+        <h1>NEWS</h1>
+        <div class="row">
+            <div class="investment-col">
+                <img src="Pictures/StockNews2.jpg">
+                <div class="layout1">
+                    <p>28 September 2023</p>
+                    <h3>Money Matters</h3>
+                    <p>Stocks fall as Fed lifts rate expectations. Stock markets fell last week after the US Federal Reserve increased its interest rate expectations in response to...</p>
+                    <a href="money-matters-28-September-2023.html">Read More>></a>
+                    <br><br>
+                </div>
+            </div>
+            <div class="investment-col">
+                <img src="Pictures/StockNews2.jpg">
+                <div class="layout1">
+                    <p>21 September 2023</p>
+                    <h3>Money Matters</h3>
+                    <p>Stocks mixed as US inflation accelerates. Stock markets were mixed last week as an uptick in US inflation raised concerns that the Federal Reserve may...</p>
+                    <a href="money-matters-21-September-2023.html">Read More>></a>
+                    <br><br>
+                </div>
+            </div>
+            <div class="investment-col">
+                <img src="Pictures/StockNews2.jpg">
+                <div class="layout1">
+                    <p>14 September 2023</p>
+                    <h3>Money Matters</h3>
+                    <p>Positive economic data weigh on stock markets. Positive data from the world’s largest economy proved to be bad news for stock markets last week, as...</p>
+                    <a href="money-matters-14-September-2023.html">Read More>></a>
+                    <br><br>
+                </div>
+            </div>
+        </div>
+        <a href="news.html"><button class="btnView">View More</button></a>
+    </section>
+        
+    <section class="company">
+        <div class="row">
+            <div class="company-col1">
+                <a href="https://www.jse.co.za/" target="_blank"><img src="Pictures\JSE.png"></a>
+            </div>
+            <div class="company-col">
+                <a href="https://www.nyse.com/index" target="_blank"><img src="Pictures\NYSE.png"></a>
+            </div>
+        </div>
+    </section>
+        
+        <!----------Contact------->
+    <section class="contact">
+        <div class="row">
+            <br><br>
+            <h1><i class="fa-solid fa-phone"></i>Contact Us</h1>
+            <p>Fill out our contact form to reach out to our financial consultants for personalized advice or to schedule a consultation.</p>
+            <br>
+            <a href="contact.html"><button class="btnFill">Fill Out Form</button></a>
+        </div>
+    </section>
+        
+        <!----------Contact------->
+    <footer class="copyright">
+        <br><br>
+        <ul class="icons">
+            <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-linkedin"></i></a> </li>
+        </ul>
+        <br>
+        <ul>
+            <li><p><a href="#">Privacy Policy.</a></p></li>
+            <li><p><a href="#">Terms of Use.</a></p></li>
+            <li><p><a href="#">Regulatory Compliance.</a></p></li>
+            <li><p><a href="#">FAQ.</a></p></li>
+        </ul>
+        <p>&copy; 2023 SAAGROEG TRADING GROUP Pty Ltd. All Rights Reserved.</p>
+    </footer>
+
+        
+        <script src="https://kit.fontawesome.com/6d06f9f594.js" crossorigin="anonymous"></script>
+        
+        <script type="text/javascript">
+            //jquery for toggle dropdown menus
+            $(document).ready(function(){
+                //toggle sub-menus
+                $(".sub-btn").click(function(){
+                    $(this).next(".sub-menu").slideToggle();
+                });
+                
+                //toggle more-menus
+                $(".more-btn").click(function(){
+                    $(this).next(".more-menu").slideToggle();
+                });
+            });
+            
+            //Javascript for the responsive nagivation
+            var menu = document.querySelector(".menu");
+            var menuBtn = document.querySelector(".menu-btn");
+            var closeBtn = document.querySelector(".close-btn");
+            
+            menuBtn.addEventListener("click", () => {
+                menu.classList.add("active");
+            })
+            
+            closeBtn.addEventListener("click", () => {
+                menu.classList.remove("active");
+            })
+            
+            //Javascript for the navigation bar effects on scroll
+            window.addEventListener("scroll", function(){
+                var header = document.querySelector("header");
+                header.classList.toggle("sticky", window.scrollY > 0);
+            })
+        </script>
+    </body>
+    
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.1.0/firebase-app.js";
+        import { getDatabase, set, ref, update } from "https://www.gstatic.com/firebasejs/10.1.0/firebase-database.js";
+        import { getAuth, signOut } from "https://www.gstatic.com/firebasejs/10.1.0/firebase-auth.js";
+        
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+        
+        // Your web app's Firebase configuration
+        const firebaseConfig = {
+            apiKey: "AIzaSyAUW0qKOP5ittvBKoV_8t7Xyy5FRU-UPBU",
+            authDomain: "stg-login-b36b4.firebaseapp.com",
+            databaseURL: "https://stg-login-b36b4-default-rtdb.firebaseio.com",
+            projectId: "stg-login-b36b4",
+            storageBucket: "stg-login-b36b4.appspot.com",
+            messagingSenderId: "634744399730",
+            appId: "1:634744399730:web:16a8a771176b0dd5611feb"
+        };
+        
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const database = getDatabase(app);
+        const auth = getAuth();
+        
+        logout.addEventListener("click", (e) => {
+           const auth = getAuth();
+            
+            signOut(auth).then(() => {
+                alert('Logout Successful\nThank You For Visiting Our Website');
+                location.href = "index.html";
+            }).catch((error) => {
+                // An error happened.
+            }); 
+        });
+    </script>
+</html>

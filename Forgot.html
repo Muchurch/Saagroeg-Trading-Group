@@ -1,0 +1,84 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Dropdown Menu</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <header class="login-header">
+            <img src="Pictures\logo.PNG">
+        </header>
+        
+        <section class="home-forgot">
+            
+            <div class="wrapper">
+                <div class="form-box login">
+                    <h2>Forgot Password</h2>
+                    <form action="#">
+                        <div class="input-box">
+                            <span class="icon"><i class="fa-solid fa-envelope"></i></span>
+                            <input type="email" id="email" required>
+                            <label>Email</label>
+                        </div>
+                        <button type="submit" class="btn" id="reset">Reset</button>
+                        <div class="login-register">
+                            <p>Please enter your email address above and you will receive an email that contains a link to reset your password</p>
+                        </div>
+                        <div class="login-register">
+                            <p>Return to <a href="index.html"><b>Login Page</b></a></p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+            
+        <script src="https://kit.fontawesome.com/6d06f9f594.js" crossorigin="anonymous"></script>
+        <script src="script.js" defer></script>
+        
+    </body>
+    
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.3.0/firebase-app.js";
+        import { getDatabase } from "https://www.gstatic.com/firebasejs/10.3.0/firebase-database.js";
+        import { getAuth, sendPasswordResetEmail } from "https://www.gstatic.com/firebasejs/10.3.0/firebase-auth.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+        
+        // Your web app's Firebase configuration
+        const firebaseConfig = {
+            apiKey: "AIzaSyC3wRUdSvTrUvpeVGssHuil9HnCeQSvMPM",
+            authDomain: "stg-login-register-bd60c.firebaseapp.com",
+            databaseURL: "https://stg-login-register-bd60c-default-rtdb.firebaseio.com",
+            projectId: "stg-login-register-bd60c",
+            storageBucket: "stg-login-register-bd60c.appspot.com",
+            messagingSenderId: "237198009097",
+            appId: "1:237198009097:web:26741d415c71681142a9d8"
+        };
+        
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const database = getDatabase(app);
+        const auth = getAuth();
+        
+        reset.addEventListener('click', (e) => {
+            
+            e.preventDefault();
+            
+            var email = document.getElementById('email').value;
+            
+            sendPasswordResetEmail(auth, email)
+                .then(() => {
+                alert('Password reset email sent!');
+            })
+                .catch((error) => {
+                const errorCode = error.code;
+                const errorMessage = error.message;
+                // ..
+            });
+        });
+        
+    </script>
+</html>

@@ -1,0 +1,238 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Dropdown Menu</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <header>
+            <a href="home.html" class="logo"><img src="Pictures\logo.PNG"></a>
+            <div class="navigation">
+                <ul class="menu">
+                    <div class="close-btn"><i class="fa-solid fa-xmark"></i></div>
+                    <li class="menu-item"><a href="home.html">Home</a></li>
+                    <li class="menu-item"><a href="about.html">About Us</a></li>
+                    <li class="menu-item"><a class="sub-btn" href="#">Services <i class="fa-solid fa-caret-down"></i></a>
+                        <ul class="sub-menu">
+                            <li class="sub-item"><a href="Financial-Consulting.html">Financial Consulting</a></li>
+                            <li class="sub-item"><a href="investment-Opportunities.html">Investment Opportunities</a></li>
+                            <li class="sub-item"><a href="investment-Strategies.html">Investment Strategies</a></li>
+                            <li class="sub-item more"><a class="more-btn" href="#">Stock Market Data <i class="fa-solid fa-caret-right"></i></a>
+                                <ul class="more-menu">
+                                    <li class="more-item"><a href="JSE_Stock_Screener.html">JSE Stock Screener</a></li>
+                                    <li class="more-item"><a href="NYSE_Stock_Screener.html">NYSE Stock Screener</a></li>
+                                </ul>
+                            </li>
+                            <li class="sub-item"><a href="#">Market Research</a></li>
+                            <li class="sub-item more"><a class="more-btn" href="#">Investment Tools <i class="fa-solid fa-caret-right"></i></a>
+                                <ul class="more-menu">
+                                    <li class="more-item"><a href="Stock-Heatmap.html">Stock Heatmap</a></li>
+                                    <li class="more-item"><a href="Currency-Converter.html">Currency Converter</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu-item"><a href="news.html">News</a></li>
+                    <li class="menu-item"><a href="education.html">Education</a></li>
+                    <li class="menu-item"><a href="contact.html">Contact Us</a></li>
+                    <li class="menu-item"><button class="btnLogin" id="logout">Logout</button></li>
+                </ul>
+            </div>
+            <div class="menu-btn"><i class="fa-sharp fa-solid fa-bars"></i></div>
+        </header>
+        
+        <section class="money-matters-header4">
+            <div class="container-1">
+            <h1>MONEY MATTERS 04 MAY 2023</h1>
+        </div>
+        </section>
+        
+        <!----------Money Matters 04 May------->
+        
+        <section class="Money-Matters">
+        <div class="row">
+            <br><br>
+            <h2><span>Stocks mixed as earnings season ramps up</span></h2>
+            <br>
+            <p>Stock markets were mixed last week as investors weighed strong quarterly earnings results against renewed volatility in the banking sector.</p>
+            <br>
+            <p>On Thursday, the S&P 500 and the Dow enjoyed their best trading day since January after encouraging results from Meta Platforms boosted technology stocks. The indices ended the week up 0.7% and 0.8%, respectively, despite weaker-than-expected gross domestic product (GDP) figures.</p>
+            <br>
+            <p>In Europe, the Stoxx 600 fell 0.5% as news that the eurozone had avoided a recession in the first quarter failed to outweigh declines in banking stocks. The banking sector-heavy FTSE 100 also ended the week down 0.5%.</p>
+            <br>
+            <p>Over in Asia, Japan’s Nikkei 225 rose 1.0% after the government eased its border controls and the Bank of Japan left its yield curve control policy unchanged. China’s Shanghai Composite gained 1.5% ahead of the five-day Labor Day holiday.</p>
+            <br><br>
+            <h2><span>Last week’s market update*</span></h2>
+            <br>
+            <p>• FTSE 100: -0.53%<br>• S&P 500: +0.78%<br>• Dow: +0.66%<br>• Nasdaq: +1.57%<br>• Dax: +0.37%<br>• Hang Seng: -0.33%<br>• Shanghai Composite: +1.46%<br>• Nikkei 225: +0.92%<br>• Stoxx 600: -0.50%<br>• MSCI EM ex Asia: +0.25<br>* Data from close of business Friday 21 April to close of business Friday 28 April</p>
+            <br><br>
+            <h2><span>JPMorgan takes over First Republic</span></h2>
+            <br>
+            <p>Stock markets fell on Tuesday (2 May) as investors digested news that JPMorgan had agreed to take over the assets of First Republic in a deal brokered by regulators. The US regional bank had been under pressure for several weeks, after the collapse of Silicon Valley Bank and Signature Bank in March sparked concerns about the banking sector. First Republic announced last week that it had lost 40% of its deposits in the first quarter, which resulted in its share price plummeting. It is hoped the JPMorgan deal will help to restore confidence in the sector.</p>
+            <br>
+            <p>Interest rates were also in the spotlight on Tuesday after Australia’s central bank announced a surprise increase in the official cash rate, taking it to an 11-year high. The US Federal Reserve is expected to hike rates at its policy meeting today, but there is renewed uncertainty about the future path for interest rates following the collapse of First Republic. The European Central Bank is also expected to press ahead with a rate hike on Thursday, although an unexpected easing of core inflation has added to arguments for a smaller increase than the 0.5% to 0.75% hikes seen at each of its past six meetings.</p>
+            <br><br>
+            <h2><span>US GDP figures miss forecasts</span></h2>
+            <br>
+            <p>Last week, figures released by the Commerce Department showed US economic growth slowed sharply in the first quarter of the year. GDP grew by 1.1% on an annualised basis between January and March, according to the preliminary data. This was well below the 2.0% increase forecast by economists and a sharp slowdown from 2.6% growth in the final quarter of 2022. Inventories declined and there was a slowdown in housing and business investment. However, consumer spending remained robust, rising by 3.7% on an annualised basis.</p>
+            <br>
+            <p>Separate figures showed orders for US durable goods – those made to last more than three years – smashed forecasts in March following a big rebound in orders for jet aircraft. Orders rose by 3.2% month-on-month to $276.4bn, beating expectations for a 1.0% gain. However, orders excluding aircraft and defence – considered a better indicator of underlying investment demand – fell by 0.4%.</p>
+            <br><br>
+            <h2><span>Eurozone narrowly avoids a recession</span></h2>
+            <br>
+            <p>Last week also saw the release of GDP figures for the eurozone, which showed the bloc managed to narrowly avoid a technical recession (defined as two consecutive quarters of declining GDP) in the first quarter. GDP grew by 0.1% as warm weather helped to offset the impact of higher energy prices. Italy and Spain performed better than expected, with GDP expanding by 0.5% in both countries, whereas economic growth in Germany stagnated.</p>
+            <br>
+            <p>Meanwhile, the European Commission’s economic sentiment indicator held steady at 99.3 in April following a downwardly revised 99.2 in March. Sentiment improved in the services and retail sectors, while consumer confidence increased by 1.6 points. Industrial confidence declined for the third month in a row.</p>
+            <br><br>
+            <h2><span>BoJ to review monetary policy</span></h2>
+            <br>
+            <p>The Bank of Japan (BoJ) held its first meeting under new governor Kazuo Ueda last week. The BoJ kept the short-term interest rate at -0.1% and left its yield curve control policy unchanged (the policy allows ten-year Japanese government bond yields to fluctuate between -0.5% and +0.5% from the 0% target level). However, the BoJ announced that it would conduct a 12-to-18-month review of monetary policy, which could pave the way for Ueda to phase out his predecessor’s stimulus programme. The bank also removed part of its forward guidance that previously said it “expects short and long-term policy interest rates to remain at their present or lower levels”.</p>
+            <br>
+            <p>In its outlook report, the BoJ upgraded its forecasts for core inflation from 1.6% to 1.8% for the 2023 fiscal year, and from 1.8% to 2.0% for the 2024 fiscal year. This came after data showed core inflation in the Tokyo area accelerated in April to 3.5% year-on-year, well above the BoJ’s 2% target.</p>
+            <br><br><br><br><br>
+            </div>
+    </section>
+        
+        <section class="investment">
+        <h1><span>EXPLORE MORE NEWS</span></h1>
+        <div class="row">
+            <div class="investment-col">
+                <img src="Pictures/StockNews.jpg">
+                <div class="layout1">
+                    <p>11 May 2023</p>
+                    <h3>Money Matters</h3>
+                    <p>Stocks mixed as Fed and ECB hike rates. Stock markets were mixed last week as the US Federal Reserve and European Central Bank (ECB) hiked...</p>
+                    <a href="money-matters-11-May-2023.html">Read More>></a>
+                    <br><br>
+                </div>
+            </div>
+            <div class="investment-col">
+                <img src="Pictures/News1.jpg">
+                <div class="layout1">
+                    <p>19 April 2023</p>
+                    <h3>Money Matters</h3>
+                    <p>Stocks rise as recession fears ease. Stock markets rose last week as signs of economic growth and easing inflationary pressures boosted investor sentiment. The FTSE...</p>
+                    <a href="money-matters-19-April-2023.html">Read More>></a>
+                    <br><br>
+                </div>
+            </div>
+            <div class="investment-col">
+                <img src="Pictures/News1.jpg">
+                <div class="layout1">
+                    <p>12 April 2023</p>
+                    <h3>Money Matters</h3>
+                    <p>Mixed week for markets as job openings remain tight. Markets saw mixed performance in shorther trading week due to the Easter holiday. In the...</p>
+                    <a href="money-matters-12-April-2023.html">Read More>></a>
+                    <br><br>
+                </div>
+            </div>
+        </div>
+    </section>
+        
+        <!----------Contact------->
+    <section class="contact">
+        <div class="row">
+            <br><br>
+            <h1><i class="fa-solid fa-phone"></i>Contact Us</h1>
+            <p>Fill out our contact form to reach out to our financial consultants for personalized advice or to schedule a consultation.</p>
+            <br>
+            <a href="contact.html"><button class="btnFill">Fill Out Form</button></a>
+        </div>
+    </section>
+        
+        <!----------Contact------->
+    <footer class="copyright">
+        <br><br>
+        <ul class="icons">
+            <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-linkedin"></i></a> </li>
+        </ul>
+        <br>
+        <ul>
+            <li><p><a href="#">Privacy Policy.</a></p></li>
+            <li><p><a href="#">Terms of Use.</a></p></li>
+            <li><p><a href="#">Regulatory Compliance.</a></p></li>
+            <li><p><a href="#">FAQ.</a></p></li>
+        </ul>
+        <p>&copy; 2023 SAAGROEG TRADING GROUP Pty Ltd. All Rights Reserved.</p>
+    </footer>
+
+        
+        <script src="https://kit.fontawesome.com/6d06f9f594.js" crossorigin="anonymous"></script>
+        
+        <script type="text/javascript">
+            //jquery for toggle dropdown menus
+            $(document).ready(function(){
+                //toggle sub-menus
+                $(".sub-btn").click(function(){
+                    $(this).next(".sub-menu").slideToggle();
+                });
+                
+                //toggle more-menus
+                $(".more-btn").click(function(){
+                    $(this).next(".more-menu").slideToggle();
+                });
+            });
+            
+            //Javascript for the responsive nagivation
+            var menu = document.querySelector(".menu");
+            var menuBtn = document.querySelector(".menu-btn");
+            var closeBtn = document.querySelector(".close-btn");
+            
+            menuBtn.addEventListener("click", () => {
+                menu.classList.add("active");
+            })
+            
+            closeBtn.addEventListener("click", () => {
+                menu.classList.remove("active");
+            })
+            
+            //Javascript for the navigation bar effects on scroll
+            window.addEventListener("scroll", function(){
+                var header = document.querySelector("header");
+                header.classList.toggle("sticky", window.scrollY > 0);
+            })
+        </script>
+    </body>
+    
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.1.0/firebase-app.js";
+        import { getDatabase, set, ref, update } from "https://www.gstatic.com/firebasejs/10.1.0/firebase-database.js";
+        import { getAuth, signOut } from "https://www.gstatic.com/firebasejs/10.1.0/firebase-auth.js";
+        
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+        
+        // Your web app's Firebase configuration
+        const firebaseConfig = {
+            apiKey: "AIzaSyAUW0qKOP5ittvBKoV_8t7Xyy5FRU-UPBU",
+            authDomain: "stg-login-b36b4.firebaseapp.com",
+            databaseURL: "https://stg-login-b36b4-default-rtdb.firebaseio.com",
+            projectId: "stg-login-b36b4",
+            storageBucket: "stg-login-b36b4.appspot.com",
+            messagingSenderId: "634744399730",
+            appId: "1:634744399730:web:16a8a771176b0dd5611feb"
+        };
+        
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const database = getDatabase(app);
+        const auth = getAuth();
+        
+        logout.addEventListener("click", (e) => {
+           const auth = getAuth();
+            
+            signOut(auth).then(() => {
+                alert('Logout Successful\nThank You For Visiting Our Website');
+                location.href = "index.html";
+            }).catch((error) => {
+                // An error happened.
+            }); 
+        });
+    </script>
+</html>
