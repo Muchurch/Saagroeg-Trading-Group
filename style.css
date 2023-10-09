@@ -1,0 +1,1643 @@
+/* Import Google Font - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+::selection{
+  color: #fff;
+  background: #d23e3e;
+}
+
+header{
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    padding: 0 100px;
+    transition: 0.6s;
+}
+
+.slide-stock{
+    z-index: 998;
+    position: fixed;
+    top: 92;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+}
+
+header .navigation{
+    position: relative;
+    line-height:  91px;
+}
+
+header.sticky .navigation{
+    line-height: -92px;
+}
+
+header .navigation .menu{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    user-select: none;
+}
+
+
+.menu-item > a{
+    color: black;
+    font-size: 18px;
+    text-decoration: none;
+    margin: 20px;
+    padding: 25px 0;
+}
+
+.menu-item > a:hover{
+    color: #d23e3e;
+    transition: 0.3s;
+}
+
+.menu-item .sub-menu{
+    position: absolute;
+    background: white;
+    top: 92px;
+    line-height: 40px;
+    list-style: none;
+    border-radius: 0 0 8px 8px;
+    box-shadow: 0 5px 25px rgb (0 0 0 / 20%); 
+    pointer-events: none;
+    transform: translateY(20px);
+    opacity: 0; 
+    transition: 0.5s;
+    transition-property: transform, opacity;
+} 
+
+.menu-item:hover .sub-menu{
+    pointer-events: all;
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.menu-item .sub-menu .sub-item{
+    position: relative;
+    padding: 7px 0;
+    cursor: pointer;
+    box-shadow: inset 0px -30px 5px -30px rgb(255, 255, 255, 0.2);
+}
+
+.menu-item .sub-menu .sub-item a{
+    color: black;
+    font-size: 1em;
+    text-decoration: none;
+    padding: 15px 30px;
+}
+
+.menu-item .sub-menu .sub-item:hover{
+    background: #d23e3e; 
+}
+
+.menu-item .sub-menu .sub-item:last-child:hover{
+    border-radius: 0 0 8px 8px;
+}
+
+.more .more-menu{
+    position: absolute;
+    background: white;
+    list-style: none;
+    top: 0;
+    left: 100%;
+    white-space: nowrap;
+    border-radius: 0 8px 8px 8px;
+    overflow: hidden;
+    pointer-events: none;
+    transform: translateY(20px);
+    opacity: 0;
+    transition: 0.5s;
+    
+    transition-property: transform, opacity;
+}
+
+.more:hover .more-menu{
+    pointer-events: all;
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.more .more-menu .more-item{
+    padding: 7px 0;
+    box-shadow: inset 0px -30px 5px -30px rgb(255, 255, 255, 0.2);
+    transition: 0.3s;
+}
+
+.more .more-menu .more-item:hover{
+    background: #d23e3e;
+}
+
+.btnLogin{
+    width: 120px;
+    height: 40px;
+    background: #d23e3e;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 18px;
+    color: white;
+    font-weight: 500;
+    margin-left: 50px;
+    transition: .5s;
+    align-items: center;
+}
+
+.btnLogin:hover{
+    background-color: black;
+    color: white;
+}
+
+.menu-btn{
+    display: none;
+}
+
+.close-btn{
+    display: none;
+}
+
+.slide-stock{
+    position: fixed;
+}
+
+.home {
+    position: relative;
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(Pictures/background.jpg);
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-1{
+    width: 90%;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.container-1 h1{
+    font-size: 62px; 
+}
+
+.container-1 p{
+    font-size: 20px;
+}
+
+.container-1 .btnRead{
+    width: 150px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid white;
+    outline: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 18px;
+    color: white;
+    font-weight: 500;
+    transition: .5s;
+    margin-top: 30px;
+}
+
+.btnRead:hover{
+    background-color: white;
+    color: #d23e3e;
+}
+
+/*----- Services -----*/
+.services{
+    width: 85%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.services h1{
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.services p{
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px; 
+}
+
+.services .row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.services .row2{
+    margin-top: 1%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.service-col{
+    flex-basis: 32%;
+    background: #d23e3e;
+    border-radius: 10px;
+    margin-bottom: 3%;
+    padding: 10px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+    
+}
+
+.service-col h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+.service-col:hover{
+    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+}
+
+.service-col a{
+    color: black;
+    text-decoration: none;
+}
+
+.service-col a:hover{
+    text-decoration: underline;
+}
+
+/*----- Investment Education -----*/
+.investment{
+    width: 85%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.investment h1{
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.investment .row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.investment-col{
+    flex-basis: 30%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+    background: white;
+    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+}
+
+.investment-col img{
+    width: 100%;
+}
+
+.investment-col h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+    color: #d23e3e;
+}
+
+.investment-col p{
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px; 
+}
+
+.investment-col a{
+    color: #d23e3e;
+    text-decoration: none;
+}
+
+.investment-col a:hover{
+    text-decoration: underline;
+}
+
+.investment .btnView{
+    width: 150px;
+    height: 40px;
+    background: #d23e3e;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 18px;
+    color: white;
+    font-weight: 500;
+    margin-top: 20px;
+    transition: .5s;
+}
+
+.investment .btnView:hover{
+    background-color: black;
+    color: white;
+}
+
+/*----- News -----*/
+.news{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.news h1{
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.news .row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.news-col{
+    flex-basis: 30%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+    background: white;
+    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+}
+
+.news-col img{
+    width: 100%;
+}
+
+.news-col h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+    color: #d23e3e;
+}
+
+.news-col p{
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px; 
+}
+
+.news-col a{
+    color: #d23e3e;
+    text-decoration: none;
+    padding-bottom: 10px;
+}
+
+.news-col a:hover{
+    text-decoration: underline;
+}
+
+.news .btnView{
+    width: 150px;
+    height: 40px;
+    background: #d23e3e;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 18px;
+    color: white;
+    font-weight: 500;
+    margin-top: 20px;
+    transition: .5s;
+}
+
+.news .btnView:hover{
+    background-color: black;
+    color: white;
+}
+
+.company{
+    width: 30%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.company .row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.company-col1 img{
+    width: 120px;
+    margin-top: 10px;
+}
+/*----- Contact -----*/
+.contact{
+    width: 100%;
+    margin: auto;
+    margin-top: 50px;
+    text-align: center;
+    background: #d23e3e;
+    height: 230px;
+}
+
+.contact .row h1{
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.contact .row p{
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+
+.contact .row .btnFill{
+    width: 150px;
+    height: 40px;
+    background: #d23e3e;
+    border: 2px solid black;
+    outline: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 18px;
+    color: black;
+    font-weight: 500;
+    transition: .5s;
+}
+
+.contact .row .btnFill:hover{
+    background-color: black;
+    color: #d23e3e;
+}
+
+/*----- Footer -----*/
+.copyright{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    background: black;
+    height: 200px;
+}
+
+.copyright ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+}
+
+.copyright ul li{
+    margin: 5px;
+    text-align: center;
+}
+
+.copyright ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+.copyright p{
+    color: white;
+    text-align: center;
+    margin-top: 18px;
+}
+
+.copyright ul li p{
+    margin-top: -15px;
+}
+
+.icons a{
+    font-size: 25px;
+}
+
+.copyright ul li a:hover{
+    text-decoration: underline;
+    color: #d23e3e;
+}
+
+/*----- News Page -----*/
+.home-news{
+    position: relative;
+    min-height: 60vh;
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(Pictures/background2.jpg);
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-news h1{
+    margin-top: 85px;
+}
+
+.scroll{
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    font-size: 18px;
+}
+
+.scroll .row a{
+    text-decoration: none;
+    padding-left: 10px;
+    color: #d23e3e;
+}
+
+.scroll .row a:hover{
+    color: black;
+}
+
+/*----- Contact Us Page -----*/
+.location{
+    width: 80%;
+    margin: auto;
+    padding: 80px 0px;
+}
+
+.location iframe{
+    width: 100%;
+}
+
+.contact-us{
+    width: 80%;
+    margin: auto;
+}
+
+.contact-col{
+    flex-basis: 40%;
+    margin-bottom: 30px;
+}
+
+.contact-col div{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.contact-col div .fa-solid{
+    font-size: 28px;
+    color: #d23e3e;
+    margin: 10px;
+    margin-right: 30px;
+}
+
+.contact-col div p{
+    padding: 0;
+    color: black;
+}
+
+.contact-col div h5{
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: #d23e3e;
+    font-weight: 400;
+}
+
+.contact-col form{
+    margin: 50px 0;
+    padding: 10px 20px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+}
+
+.contact-col form input, textarea{
+    width: 100%;
+    padding: 10px;
+    margin: 15px 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    background: #f0f0f0;
+}
+
+.contact-col form .btnSend{
+    width: 60%;
+    height: 40px;
+    background: #d23e3e;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 18px;
+    color: white;
+    font-weight: 500;
+    transition: .5s;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-col form .btnSend:hover{
+    background: black;
+    color: white;
+}
+
+/*----- About Us Page -----*/
+.about-us{
+    width: 85%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.about-us h1{
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+.about-us p{
+    font-size: 20px;
+}
+
+span{
+    color: #d23e3e;
+}
+
+.about-row{
+    width: 90%;
+    margin: auto;
+    padding-top: 100px;
+    text-align: center;
+    display: flex;  
+    justify-content: space-between;
+    flex-basis: 20%;
+}
+
+.about-col h1{
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+.about-col p{
+    font-size: 20px;
+}
+
+.key-skills{
+    width: 80%;
+    padding-top: 100px;
+    margin: auto;
+}
+
+.key-skills h1{
+    font-size: 42px;
+    margin-bottom: 22px;
+    text-align: center;
+}
+
+.key-skills p{
+    font-size: 18px;
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+.key-skills span{
+    font-size: 20px;
+}
+
+/*----- Login, Register and Forgot -----*/
+.login-header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: none;
+    padding: 0 100px;
+}
+
+.home-login {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(4,9,10,0.4), rgba(4,9,10,0.4)), url(Pictures/background3.jpg);
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.home-forgot {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(4,9,10,0.4), rgba(4,9,10,0.4)), url(Pictures/Forgot_Background.jpg);
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.wrapper{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 3.1%;
+    width: 370px;
+    height: 450px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .5);
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transition: height .2s ease;
+}
+
+.wrapper.active{
+    height: 480px; 
+}
+
+.wrapper .form-box{
+    width: 100%;
+    padding: 40px;
+    
+}
+
+.wrapper .form-box.login{
+    transition: transform .18s ease;
+    transform: translateX(0);
+}
+
+.wrapper.active .form-box.login{
+    transition: none;
+    transform: translateX(-400px);
+}
+
+.wrapper .form-box.register{
+    position: absolute;
+    transition: none;
+    transform: translateX(400px);
+}
+
+.wrapper.active .form-box.register{
+    transition: transform .18s ease;
+    transform: translateX(0);
+}
+
+.form-box h2{
+    font-size: 2em;
+    color: white;
+    text-align: center;
+}
+
+.input-box{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    border-bottom: 2px solid white;
+    margin: 30px 0;
+}
+
+.input-box2{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    border-bottom: 2px solid white;
+    margin: 30px 0;
+}
+
+.input-box3{
+    position: relative;
+    width: 100%;
+    height: 135px;
+    margin: 30px 0;
+}
+
+.input-box3 p{
+    color: white;
+    font-size: 1.1rem;
+}
+
+.requirement-list{
+    margin-top: 5px;
+}
+
+.requirement-list li{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.requirement-list li i{
+    font-size: 0.5rem;
+    color: #d23e3e;
+    width: 20px;
+}
+
+.requirement-list li i.valid{
+    color: #999;
+}
+
+.input-box3 span{
+    color: white;
+    margin-left: 12px;
+}
+
+.requirement-list li i.valid span{
+    color: #999;
+}
+
+.input-box label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 1em;
+    color: white;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.input-box2 label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 1em;
+    color: white;
+    font-weight: 500;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.input-box input:focus~label,
+.input-box input:valid~label{
+    top: -5px;
+}
+
+.input-box2 input:focus~label,
+.input-box2 input:valid~label{
+    top: -5px;
+}
+
+.input-box input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    color: white;
+    font-weight: 600;
+    padding: 0 35px 0 5px;
+}
+
+.input-box2 input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    color: white;
+    font-weight: 600;
+    padding: 0 35px 0 5px;
+}
+
+::-ms-reveal {
+    filter: invert(100%);
+}
+
+.input-box .icon{
+    position: absolute;
+    right: 8px;
+    top: 14px;
+    font-size: 1.2em;
+    line-height: 57px;
+}
+
+.input-box2 .icon{
+    position: absolute;
+    right: 8px;
+    top: 14px;
+    font-size: 1.2em;
+    line-height: 57px;
+}
+
+.remember-forget{
+    font-size: .9em;
+    color: white;
+    font-weight: 600;
+    margin: -15px 0 15px;
+    text-align: right;
+}
+
+.remember-forget2{
+    font-size: .9em;
+    color: white;
+    margin: -15px 0 15px;
+    text-align: left;
+}
+
+.remember-forget label input{
+    accent-color: #d23e3e;
+    margin-right: 3px;
+}
+
+.remember-forget2 label input{
+    accent-color: #d23e3e;
+    margin-right: 3px;
+}
+
+.remember-forget a{
+    color: white;
+    text-decoration: none; 
+}
+
+.remember-forget2 a{
+    color: white;
+    text-decoration: none;
+}
+
+.remember-forget a:hover{
+    color: #d23e3e;
+    text-decoration: underline;
+}
+
+.remember-forget2 a:hover{
+    color: #d23e3e;
+    text-decoration: underline;
+}
+
+.btn{
+    width: 100%;
+    margin-top: 10px;
+    height: 45px;
+    background: #d23e3e;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    cursor: pointer;
+    font-size: 1.1em;
+    font-weight: 500;
+}
+
+.btn:hover{
+    background: white;
+    color: #d23e3e;
+}
+
+.login-register{
+    font-size: .9em;
+    color: white;
+    text-align: center;
+    font-weight: 500;
+    margin: 25px 0 10px;
+}
+
+.login-register p{
+    font-size: 1.1em;
+}
+
+.login-register p a{
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.login-register p a:hover{
+    color: #d23e3e;
+    text-decoration: underline;
+}
+
+/*----- Money Matters ------*/
+.money-matters-header {
+    position: relative;
+    min-height: 65vh;
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(Pictures/StockNews3.jpg);
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.money-matters-header h1{
+    margin-top: 85px;
+}
+
+.money-matters-header2 {
+    position: relative;
+    min-height: 65vh;
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(Pictures/StockNews2.jpg);
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.money-matters-header2 h1{
+    margin-top: 85px;
+}
+
+.money-matters-header3 {
+    position: relative;
+    min-height: 65vh;
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(Pictures/News1.jpg);
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.money-matters-header3 h1{
+    margin-top: 85px;
+}
+
+.money-matters-header4 {
+    position: relative;
+    min-height: 65vh;
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(Pictures/StockNews.jpg);
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.money-matters-header4 h1{
+    margin-top: 85px;
+}
+
+.Money-Matters{
+    width: 90%;
+    margin: auto;
+    text-align: left;
+    padding-top: 50px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+}
+
+.Money-Matters h2{
+    font-size: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.Money-Matters h3{
+    font-size: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.Money-Matters p{
+    font-size: 16px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.Money-Matters img{
+    width: 60%;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+/*----- Investment Education ------*/
+.investment-education-1 {
+    position: relative;
+    min-height: 65vh;
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(Pictures/Net.jpg);
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.investment-education-1 h1 {
+    margin-top: 85px;
+}
+
+.investment-education-2 {
+    position: relative;
+    min-height: 65vh;
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(Pictures/investment.jpg);
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.investment-education-2 h1 {
+    margin-top: 85px;
+}
+
+.investment-education-3 {
+    position: relative;
+    min-height: 65vh;
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(Pictures/Money.jpg);
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.investment-education-3 h1 {
+    margin-top: 85px;
+}
+
+.investment-education-4 {
+    position: relative;
+    min-height: 65vh;
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(Pictures/inflation.jpg);
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.investment-education-4 h1 {
+    margin-top: 85px;
+}
+
+.investment-education-5 {
+    position: relative;
+    min-height: 65vh;
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(Pictures/hustle.jpg);
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.investment-education-5 h1 {
+    margin-top: 85px;
+}
+
+.investment-education-6 {
+    position: relative;
+    min-height: 65vh;
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(Pictures/advice.jpg);
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.investment-education-6 h1 {
+    margin-top: 85px;
+}
+
+.investment-education-7 {
+    position: relative;
+    min-height: 65vh;
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(Pictures/bank.jpg);
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.investment-education-7 h1 {
+    margin-top: 85px;
+}
+
+.investment-education-8 {
+    position: relative;
+    min-height: 65vh;
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(Pictures/Stocks.jpg);
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.investment-education-8 h1 {
+    margin-top: 85px;
+}
+
+.investment-education-9 {
+    position: relative;
+    min-height: 65vh;
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(Pictures/asset.jpg);
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.investment-education-9 h1 {
+    margin-top: 85px;
+}
+
+.investment-education-10 {
+    position: relative;
+    min-height: 65vh;
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(Pictures/inflation2.jpg);
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.investment-education-10 h1 {
+    margin-top: 85px;
+}
+
+.investment-education-11 {
+    position: relative;
+    min-height: 65vh;
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(Pictures/blockchain.jpg);
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.investment-education-11 h1 {
+    margin-top: 85px;
+}
+
+.investment-education-12 {
+    position: relative;
+    min-height: 65vh;
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(Pictures/web.jpg);
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.investment-education-12 h1 {
+    margin-top: 85px;
+}
+
+.investment-education-13 {
+    position: relative;
+    min-height: 65vh;
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(Pictures/stocks2.jpg);
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.investment-education-13 h1 {
+    margin-top: 85px;
+}
+
+.investment-education-14 {
+    position: relative;
+    min-height: 65vh;
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(Pictures/digital.jpg);
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.investment-education-14 h1 {
+    margin-top: 85px;
+}
+
+.investment-education-15 {
+    position: relative;
+    min-height: 65vh;
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(Pictures/retirement.jpg);
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.investment-education-15 h1 {
+    margin-top: 85px;
+}
+
+.investment-education-16 {
+    position: relative;
+    min-height: 65vh;
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(Pictures/oilandgas.jpg);
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.investment-education-16 h1 {
+    margin-top: 85px;
+}
+
+.investment-education-17 {
+    position: relative;
+    min-height: 65vh;
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(Pictures/financial.jpg);
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.investment-education-17 h1 {
+    margin-top: 85px;
+}
+
+.investment-education-18 {
+    position: relative;
+    min-height: 65vh;
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)), url(Pictures/newage.jpg);
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.investment-education-18 h1 {
+    margin-top: 85px;
+}
+
+@media(max-width: 1220px){
+    /*----- Index Page -----*/
+    
+    header{
+        z-index: 999;
+    }
+    
+    .slide-stock{
+        top: 122;
+    }
+    
+    header .navigation{
+        line-height: 60px;
+    }
+    
+    header .navigation .menu {
+        position: fixed;
+        display: block;
+        background: #d23e3e;
+        min-width: 200px;
+        height: 100vh;
+        top: 0;
+        right: -100%;
+        padding: 90px 50px;
+        visibility: hidden;
+        overflow-y: auto;
+        transition: 0.5s;
+        transition-property: right, visibility;
+    }
+    
+    header .navigation .menu.active{
+        right: 0;
+        visibility: visible;
+    }
+    
+    .menu-item{
+        position: relative;
+    }
+    
+    .menu-item a{
+        color: white;
+    }
+    
+    .menu-item a:hover{
+        color: black;
+    }
+    
+    .menu-item .sub-menu{
+        opacity: 1;
+        position: relative;
+        top: 0;
+        transform: translateX(10px);
+        background: #c1373794;
+        border-radius: 5px;
+        overflow: hidden; 
+        display: none;
+    }
+    
+    .menu-item:hover .sub-menu{
+        transform: translateX(10px);
+    }
+    
+    .menu-item .sub-menu .sub-item{
+        box-shadow: none; 
+    }
+    
+    .menu-item .sub-menu .sub-item:hover{
+        background: none;
+    }
+    
+    .menu-item .sub-menu .sub-item a{
+        color: white;
+    }
+    
+    .menu-item .sub-menu .sub-item a:hover{
+        color: black;
+        transition: 0.3s;
+    }
+    
+    .more .more-menu{
+        opacity: 1;
+        position: relative;
+        left: 0;
+        transform: translateY(0);
+        background: #c1373794;
+        border-radius: 5px;
+        display: none;
+    }
+    
+    .more .more-menu .more-item{
+        box-shadow: none; 
+    }
+    
+    .more .more-menu .more-item:hover{
+        background: none;
+    }
+    
+    .more .more-menu .more-item a{
+        margin-left: 20px;
+        color: white;
+    }
+    
+    .close-btn{
+        position: absolute;
+        display: block;
+        color: white;
+        margin-top: -55px;
+        font-size: 30px;
+        cursor: pointer;
+    }
+    
+    .menu-btn{
+        font-size: 30px;
+        cursor: pointer;
+        display: block;
+        color: #d23e3e;
+    }
+    
+    .btnLogin{
+        background: white;
+        color: #d23e3e;
+        margin-left: 20px;
+    }
+    
+    header{
+        padding: 15px 20px;
+    }
+    
+    .container-1{
+        top: 51.5%;
+    }
+    
+    .container-1 h1{
+        font-size: 30px; 
+    }
+    .container-1 p{
+        font-size: 15px;
+    }
+    
+    .services{
+        width: 85%;
+        margin: auto;
+        text-align: center;
+        padding-top: 100px;
+    }
+    
+    .services .row{
+        flex-direction: column;
+    }
+    
+    .services .row2{
+        flex-direction: column;
+    }
+    
+    .investment .row{
+        flex-direction: column;
+    }
+    
+    .news .row{
+        flex-direction: column;
+    }
+    
+    .contact{
+        height: 290px;
+    }
+    
+    .contact .row h1{
+        font-size: 30px;
+        font-weight: 600;
+    } 
+    
+    .contact .row p{
+        font-size: 15px;
+    }
+    
+    .company{
+        width: 50%;
+        margin: auto;
+        text-align: center;
+        padding-top: 100px;
+    }
+    
+    .copyright{
+        height: 180px;
+    }
+    
+    .copyright p{
+        font-size: 11px;
+    } 
+    
+    /*----- News Page -----*/
+    .home-news h1{
+        font-size: 30px;
+    }
+    
+    /*----- About Us Page -----*/
+    .about-us{
+        display: block;
+    }
+    
+    .about-row{
+        display: block;
+    }
+    
+    .about-col p{
+        margin-bottom: 50px;
+    }
+    
+    .key-skills h1{
+        font-size: 30px;
+        margin-bottom: 22px;
+        text-align: center;
+    }
+    
+    /*----- Login Page -----*/
+    
+    .login-header img{
+        padding-top: 10px;
+        margin-left: -75px;
+    }
+    
+    .wrapper{
+        margin-top: 50px;
+        width: 330px;
+        height: 400px;
+    }
+    
+    @media(max-width: 375px){
+        .wrapper{
+            width: 90%;
+        }
+    }
+    
+    /*----- Register Page -----*/
+    .wrapper.active{
+        height: 550px;
+    }
+    
+    .input-box3{
+        height: 170px;
+    }
+    
+    .home-forgot .wrapper{
+        height: 450px;
+    }
+    
+    /*----- Money Matters -----*/
+    
+    .money-matters-header h1{
+        font-size: 50px;
+    }
+    .Money-Matters h2{
+        font-size: 25px;
+    }
+    
+    .Money-Matters p{
+        font-size: 15px;
+    }
+    
+    .Money-Matters img{
+        width: 90%
+    }
+}

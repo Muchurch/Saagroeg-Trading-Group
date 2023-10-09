@@ -1,0 +1,248 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Dropdown Menu</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <header>
+            <a href="home.html" class="logo"><img src="Pictures\logo.PNG"></a>
+            <div class="navigation">
+                <ul class="menu">
+                    <div class="close-btn"><i class="fa-solid fa-xmark"></i></div>
+                    <li class="menu-item"><a href="home.html">Home</a></li>
+                    <li class="menu-item"><a href="about.html">About Us</a></li>
+                    <li class="menu-item"><a class="sub-btn" href="#">Services <i class="fa-solid fa-caret-down"></i></a>
+                        <ul class="sub-menu">
+                            <li class="sub-item"><a href="Financial-Consulting.html">Financial Consulting</a></li>
+                            <li class="sub-item"><a href="investment-Opportunities.html">Investment Opportunities</a></li>
+                            <li class="sub-item"><a href="investment-Strategies.html">Investment Strategies</a></li>
+                            <li class="sub-item more"><a class="more-btn" href="#">Stock Market Data <i class="fa-solid fa-caret-right"></i></a>
+                                <ul class="more-menu">
+                                    <li class="more-item"><a href="JSE_Stock_Screener.html">JSE Stock Screener</a></li>
+                                    <li class="more-item"><a href="NYSE_Stock_Screener.html">NYSE Stock Screener</a></li>
+                                </ul>
+                            </li>
+                            <li class="sub-item"><a href="#">Market Research</a></li>
+                            <li class="sub-item more"><a class="more-btn" href="#">Investment Tools <i class="fa-solid fa-caret-right"></i></a>
+                                <ul class="more-menu">
+                                    <li class="more-item"><a href="Stock-Heatmap.html">Stock Heatmap</a></li>
+                                    <li class="more-item"><a href="Currency-Converter.html">Currency Converter</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu-item"><a href="news.html">News</a></li>
+                    <li class="menu-item"><a href="education.html">Education</a></li>
+                    <li class="menu-item"><a href="contact.html">Contact Us</a></li>
+                    <li class="menu-item"><button class="btnLogin" id="logout">Logout</button></li>
+                </ul>
+            </div>
+            <div class="menu-btn"><i class="fa-sharp fa-solid fa-bars"></i></div>
+        </header>
+        
+        <section class="money-matters-header3">
+            <div class="container-1">
+            <h1>MONEY MATTERS 25 MAY 2023</h1>
+        </div>
+        </section>
+        
+        <!----------Money Matters 25 May------->
+        
+        <section class="Money-Matters">
+        <div class="row">
+            <br><br>
+            <h2><span>Stocks rise on hopes of US debt ceiling deal</span></h2>
+            <br>
+            <p>Most major stock markets rose last week as hopes grew of a breakthrough in US debt ceiling negotiations.</p>
+            <br>
+            <p>Last Wednesday, US president Joe Biden said he was confident the US would avoid a debt default, while Republican house speaker Kevin McCarthy called a deal “doable”. On Friday, however, stocks came under pressure when Republican negotiators said they had decided to “press pause” on discussions. Talks resumed on Friday evening following a six-hour break. The S&P 500 ended the week up 1.7%, while the Nasdaq climbed 3.0% following strong gains in technology stocks.</p>
+            <br>
+            <p>The positive sentiment boosted stocks in Europe, despite a bigger-than-expected decline in eurozone industrial production. The Stoxx 600 added 0.7% and Germany’s Dax climbed 2.3%. The FTSE 100 ended the week flat after Bank of England governor Andrew Bailey warned that risks to inflation were “significantly skewed to the upside” and that further monetary tightening may be needed.</p>
+            <br>
+            <p>In Japan, the Nikkei 225 surged 4.8% following strong earnings reports and a better-than-expected expansion in first quarter gross domestic product (GDP). Stocks in China were mixed following weak growth in industrial output, retail sales, and fixed asset investment.</p>
+            <br><br>
+            <h2><span>Last week’s market update*</span></h2>
+            <br>
+            <p>•FTSE 100: +0.03%<br>•S&P 500: +1.65%<br>•Dow: +0.38%<br>•Nasdaq: +3.04%<br>•Dax: +2.27%<br>•Hang Seng: -0.90%<br>•Shanghai Composite: +0.34%<br>•Nikkei 225: +4.83%<br>•Stoxx 600: +0.72%<br>•MSCI EM ex Asia: -1.15%<br>*Data from close of business Friday 12 May to close of business Friday 19 May.</p>
+            <br><br>
+            <h2><span>Nasdaq hits highest close in nine months</span></h2>
+            <br>
+            <p>Stocks were mixed on Monday (22 May) as investors looked for signs of progress in US debt ceiling talks. The Nasdaq finished the trading session up 0.5% at 12,720.78, its highest close in nine months, whereas the Dow fell 0.4%.</p>
+            <br>
+            <p>In economic news, Rightmove’s latest house price index showed the average asking price for UK properties rose 1.8% in May to a new record of £372,894. Rightmove said this reflected a delayed response to the higher-than-expected level of market activity since the start of the year. The monthly increase was the biggest of the year so far and much higher than the historic average May rise of 1.0%. Rightmove said steadying mortgage rates and a generally more positive outlook for the economy were also contributing to seller confidence.</p>
+            <br><br>
+            <h2><span>US retail sales rebound in April</span></h2>
+            <br>
+            <p>Although last week’s headlines were mostly dominated by US debt ceiling talks, investors also saw the release of some important economic data. Most notably, the Department of Commerce published the latest US retail sales data, which showed sales volumes rebounded in April after two consecutive months of declines. Volumes grew by 0.4% month-on-month, below expectations but a swing from the 0.7% drop in March.</p>
+            <br><br>
+            <h2><span>US retail sales – MoM % change</span></h2>
+            <br>
+            <img src="Stats\Stats3.bmp">
+            <br>
+            <p>Source: Refinitiv Datastream</p>
+            <br>
+            <p>On an annual basis, sales rose by 1.6%, the slowest year-on-year pace since early in the pandemic. Core retail sales – excluding automobiles, gasoline, building materials and food services – rose by 0.7% month-on-month, much better than the 0.3% gain forecast by economists in a Reuters poll. This could indicate that consumer demand is holding up despite inflationary pressures.</p>
+            <br><br>
+            <h2><span>UK unemployment rate rises</span></h2>
+            <br>
+            <p>Here in the UK, figures from the Office for National Statistics (ONS) showed the unemployment rate unexpectedly rose to 3.9% in the three months to March from 3.8% in the three months to February. The number of workers on employers’ payrolls fell by 136,000 between March and April, the first decline in two years. Nevertheless, payrolls are more than 800,000 higher than they were in February 2020, the month before the UK went into its first Covid-19 lockdown.</p>
+            <br>
+            <p>The report also showed that average total pay (including bonuses) grew by 5.8% in the three months to March. However, total pay was down 3.0% year-on-year after adjusting for inflation.</p>
+            <br><br>
+            <h2><span>German economic sentiment plummets</span></h2>
+            <br>
+            <p>Economic sentiment in Germany plummeted in May, according to the ZEW economic research institute. The sentiment index fell to -10.7 points, down from +4.1 points in April. This was the third consecutive month of declines and the first time the index had fallen into negative territory since the end of 2022. ZEW president Achim Wambach said financial market experts “anticipate a worsening of the already unfavourable economic situation in the next six months”.</p>
+            <br>
+            <p>“As a result, the German economy could slip into a recession, albeit a mild one,” said Wambach. “The sentiment indicator decline is partly due to expectations of further interest rate hikes by the European Central Bank. Additionally, the potential default by the US in the coming weeks adds uncertainty to global economic prospects.”</p>
+            <br><br>
+            <h2><span>Japan’s GDP expands by 1.6%</span></h2>
+            <br>
+            <p>Over in Asia, preliminary figures from Japan’s Cabinet Office showed first quarter GDP expanded by 1.6% on an annualised basis, much higher than the 0.7% growth forecast by economists. Personal consumption, which comprises the majority of GDP, increased by 0.6% from the previous quarter, reflecting the post-pandemic demand for services. Capital investment and public investment rose by 0.9% and 2.4%, respectively, whereas exports declined by 4.2% amid a decline in demand for semiconductors.</p>
+            <br><br><br><br><br>
+            </div>
+    </section>
+        
+        <section class="investment">
+        <h1><span>EXPLORE MORE NEWS</span></h1>
+        <div class="row">
+            <div class="investment-col">
+                <img src="Pictures/News1.jpg">
+                <div class="layout1">
+                    <p>01 June 2023</p>
+                    <h3>Money Matters</h3>
+                    <p>Stocks fall as economic data declines Most major markets finished in the red in a week that saw worse-than-expected economic data from the UK and...</p>
+                    <a href="Money_Matters_2.html">Read More>></a>
+                    <br><br>
+                </div>
+            </div>
+            <div class="investment-col">
+                <img src="Pictures/StockNews.jpg">
+                <div class="layout1">
+                    <p>18 May 2023</p>
+                    <h3>Money Matters</h3>
+                    <p>Stocks mixed as BoE hikes base rate to 4.5%. Concerns about the outlook for interest rates and inflation continued to weigh on stock markets last...</p>
+                    <a href="Money_Matters_4.html">Read More>></a>
+                    <br><br>
+                </div>
+            </div>
+            <div class="investment-col">
+                <img src="Pictures/StockNews.jpg">
+                <div class="layout1">
+                    <p>11 May 2023</p>
+                    <h3>Money Matters</h3>
+                    <p>Stocks mixed as Fed and ECB hike rates. Stock markets were mixed last week as the US Federal Reserve and European Central Bank (ECB) hiked...</p>
+                    <a href="money-matters-11-May-2023.html">Read More>></a>
+                    <br><br>
+                </div>
+            </div>
+        </div>
+    </section>
+        
+        <!----------Contact------->
+    <section class="contact">
+        <div class="row">
+            <br><br>
+            <h1><i class="fa-solid fa-phone"></i>Contact Us</h1>
+            <p>Fill out our contact form to reach out to our financial consultants for personalized advice or to schedule a consultation.</p>
+            <br>
+            <a href="contact.html"><button class="btnFill">Fill Out Form</button></a>
+        </div>
+    </section>
+        
+        <!----------Contact------->
+    <footer class="copyright">
+        <br><br>
+        <ul class="icons">
+            <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-linkedin"></i></a> </li>
+        </ul>
+        <br>
+        <ul>
+            <li><p><a href="#">Privacy Policy.</a></p></li>
+            <li><p><a href="#">Terms of Use.</a></p></li>
+            <li><p><a href="#">Regulatory Compliance.</a></p></li>
+            <li><p><a href="#">FAQ.</a></p></li>
+        </ul>
+        <p>&copy; 2023 SAAGROEG TRADING GROUP Pty Ltd. All Rights Reserved.</p>
+    </footer>
+
+        
+        <script src="https://kit.fontawesome.com/6d06f9f594.js" crossorigin="anonymous"></script>
+        
+        <script type="text/javascript">
+            //jquery for toggle dropdown menus
+            $(document).ready(function(){
+                //toggle sub-menus
+                $(".sub-btn").click(function(){
+                    $(this).next(".sub-menu").slideToggle();
+                });
+                
+                //toggle more-menus
+                $(".more-btn").click(function(){
+                    $(this).next(".more-menu").slideToggle();
+                });
+            });
+            
+            //Javascript for the responsive nagivation
+            var menu = document.querySelector(".menu");
+            var menuBtn = document.querySelector(".menu-btn");
+            var closeBtn = document.querySelector(".close-btn");
+            
+            menuBtn.addEventListener("click", () => {
+                menu.classList.add("active");
+            })
+            
+            closeBtn.addEventListener("click", () => {
+                menu.classList.remove("active");
+            })
+            
+            //Javascript for the navigation bar effects on scroll
+            window.addEventListener("scroll", function(){
+                var header = document.querySelector("header");
+                header.classList.toggle("sticky", window.scrollY > 0);
+            })
+        </script>
+    </body>
+    
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.1.0/firebase-app.js";
+        import { getDatabase, set, ref, update } from "https://www.gstatic.com/firebasejs/10.1.0/firebase-database.js";
+        import { getAuth, signOut } from "https://www.gstatic.com/firebasejs/10.1.0/firebase-auth.js";
+        
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+        
+        // Your web app's Firebase configuration
+        const firebaseConfig = {
+            apiKey: "AIzaSyAUW0qKOP5ittvBKoV_8t7Xyy5FRU-UPBU",
+            authDomain: "stg-login-b36b4.firebaseapp.com",
+            databaseURL: "https://stg-login-b36b4-default-rtdb.firebaseio.com",
+            projectId: "stg-login-b36b4",
+            storageBucket: "stg-login-b36b4.appspot.com",
+            messagingSenderId: "634744399730",
+            appId: "1:634744399730:web:16a8a771176b0dd5611feb"
+        };
+        
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const database = getDatabase(app);
+        const auth = getAuth();
+        
+        logout.addEventListener("click", (e) => {
+           const auth = getAuth();
+            
+            signOut(auth).then(() => {
+                alert('Logout Successful\nThank You For Visiting Our Website');
+                location.href = "index.html";
+            }).catch((error) => {
+                // An error happened.
+            }); 
+        });
+    </script>
+</html>
