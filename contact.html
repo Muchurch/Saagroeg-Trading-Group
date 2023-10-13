@@ -1,0 +1,206 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Dropdown Menu</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <header>
+            <a href="home.html" class="logo"><img src="Pictures\logo.PNG"></a>
+            <div class="navigation">
+                <ul class="menu">
+                    <div class="close-btn"><i class="fa-solid fa-xmark"></i></div>
+                    <li class="menu-item"><a href="home.html">Home</a></li>
+                    <li class="menu-item"><a href="about.html">About Us</a></li>
+                    <li class="menu-item"><a class="sub-btn" href="#">Services <i class="fa-solid fa-caret-down"></i></a>
+                        <ul class="sub-menu">
+                            <li class="sub-item"><a href="Financial-Consulting.html">Financial Consulting</a></li>
+                            <li class="sub-item"><a href="investment-Opportunities.html">Investment Opportunities</a></li>
+                            <li class="sub-item"><a href="investment-Strategies.html">Investment Strategies</a></li>
+                            <li class="sub-item more"><a class="more-btn" href="#">Stock Market Data <i class="fa-solid fa-caret-right"></i></a>
+                                <ul class="more-menu">
+                                    <li class="more-item"><a href="JSE_Stock_Screener.html">JSE Stock Screener</a></li>
+                                    <li class="more-item"><a href="NYSE_Stock_Screener.html">NYSE Stock Screener</a></li>
+                                </ul>
+                            </li>
+                            <li class="sub-item"><a href="#">Market Research</a></li>
+                            <li class="sub-item more"><a class="more-btn" href="#">Investment Tools <i class="fa-solid fa-caret-right"></i></a>
+                                <ul class="more-menu">
+                                    <li class="more-item"><a href="Stock-Heatmap.html">Stock Heatmap</a></li>
+                                    <li class="more-item"><a href="Currency-Converter.html">Currency Converter</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu-item"><a href="news.html">News</a></li>
+                    <li class="menu-item"><a href="education.html">Education</a></li>
+                    <li class="menu-item"><a href="contact.html">Contact Us</a></li>
+                    <li class="menu-item"><button class="btnLogin" id="logout">Logout</button></li>
+                </ul>
+            </div>
+            <div class="menu-btn"><i class="fa-sharp fa-solid fa-bars"></i></div>
+        </header>
+        
+        <section class="home-news">
+            <div class="container-1">
+            <h1>CONTACT US</h1>
+        </div>
+        </section>
+        
+        <section class="location">
+        
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3309.366779560297!2d25.603546974952014!3d-33.95741107319291!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e7ad25a60423033%3A0xcfa7bda4c924c699!2s133%20Albany%20Rd%2C%20Port%20Elizabeth%20Central%2C%20Gqeberha%2C%206001!5e0!3m2!1sen!2sza!4v1696584099649!5m2!1sen!2sza" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        
+    </section>
+    
+    <section class="contact-us">
+        <div class="row">
+            <div class="contact-col">
+                <div>
+                    <i class="fa-solid fa-house"></i>
+                <span>
+                    <h5>133 Albany Road, North End, Port Elizabeth, Eastern Cape, 6001</h5>
+                    <p>SAAGROEG TRADING GROUP (PTY) LTD</p>
+                </span>
+                </div>
+                <div>
+                    <i class="fa-solid fa-phone"></i>
+                <span>
+                    <h5>(012) 345 6789</h5>
+                    <p>Monday - Friday, 08:00 - 16:30</p>
+                </span>
+                </div>
+                <div>
+                    <i class="fa-solid fa-envelope"></i>
+                <span>
+                    <h5>query@stg.com</h5>
+                    <p>Email us your query</p>
+                </span>
+                </div>
+            </div>
+            <div class="contact-col">
+                <form action="" id="contactForm">
+                    <input id="name" type="name" placeholder="Enter Your Name" required>
+                    <input id="email" type="email" placeholder="Enter Email Address" required>
+                    <input id="subject" type="text" placeholder="Enter Your Subject" required>
+                    <textarea id="message" rows="8" placeholder="Message"></textarea>
+                    <input type="submit" class="btnSend" id="send" value="Send Message">
+                </form>
+            </div>
+        </div>
+    </section>    
+        
+        <!----------Copyright------->
+    <footer class="copyright">
+        <br><br>
+        <ul class="icons">
+            <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-linkedin"></i></a> </li>
+        </ul>
+        <br>
+        <ul>
+            <li><p><a href="#">Privacy Policy.</a></p></li>
+            <li><p><a href="#">Terms of Use.</a></p></li>
+            <li><p><a href="#">Regulatory Compliance.</a></p></li>
+            <li><p><a href="#">FAQ.</a></p></li>
+        </ul>
+        <p>&copy; 2023 SAAGROEG TRADING GROUP Pty Ltd. All Rights Reserved.</p>
+    </footer>
+            
+        <script src="https://kit.fontawesome.com/6d06f9f594.js" crossorigin="anonymous"></script>
+        
+        <script type="text/javascript">
+            //jquery for toggle dropdown menus
+            $(document).ready(function(){
+                //toggle sub-menus
+                $(".sub-btn").click(function(){
+                    $(this).next(".sub-menu").slideToggle();
+                });
+                
+                //toggle more-menus
+                $(".more-btn").click(function(){
+                    $(this).next(".more-menu").slideToggle();
+                });
+            });
+            
+            //Javascript for the responsive nagivation
+            var menu = document.querySelector(".menu");
+            var menuBtn = document.querySelector(".menu-btn");
+            var closeBtn = document.querySelector(".close-btn");
+            
+            menuBtn.addEventListener("click", () => {
+                menu.classList.add("active");
+            })
+            
+            closeBtn.addEventListener("click", () => {
+                menu.classList.remove("active");
+            })
+            
+            //Javascript for the navigation bar effects on scroll
+            window.addEventListener("scroll", function(){
+                var header = document.querySelector("header");
+                header.classList.toggle("sticky", window.scrollY > 0);
+            })
+        </script>
+        <script src="script.js" defer></script>
+        
+    </body>
+    
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.1.0/firebase-app.js";
+        import { getDatabase, set, ref, get, child } from "https://www.gstatic.com/firebasejs/10.1.0/firebase-database.js";
+        import { getAuth, signOut } from "https://www.gstatic.com/firebasejs/10.1.0/firebase-auth.js";
+        
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+        
+        // Your web app's Firebase configuration
+        const firebaseConfig = {
+            apiKey: "AIzaSyC3wRUdSvTrUvpeVGssHuil9HnCeQSvMPM",
+            authDomain: "stg-login-register-bd60c.firebaseapp.com",
+            databaseURL: "https://stg-login-register-bd60c-default-rtdb.firebaseio.com",
+            projectId: "stg-login-register-bd60c",
+            storageBucket: "stg-login-register-bd60c.appspot.com",
+            messagingSenderId: "237198009097",
+            appId: "1:237198009097:web:26741d415c71681142a9d8"
+        };
+        
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const database = getDatabase(app);
+        const auth = getAuth();
+        
+        document.getElementById("send").addEventListener('click', function(e){
+            
+            e.preventDefault();
+            
+            set(ref(database, 'Queries/' + document.getElementById("name").value),{
+                name: document.getElementById("name").value,
+                email: document.getElementById("email").value,
+                subject: document.getElementById("subject").value,
+                message: document.getElementById("message").value
+            })
+            
+            alert("Your message was sent successfully!");
+            
+            document.getElementById("contactForm").reset();
+        });
+        
+        logout.addEventListener("click", (e) => {
+           const auth = getAuth();
+            
+            signOut(auth).then(() => {
+                alert('Logout Successful\nThank You For Visiting Our Website');
+                location.href = "index.html";
+            }).catch((error) => {
+                // An error happened.
+            }); 
+        });        
+    </script>
+    
+</html>
