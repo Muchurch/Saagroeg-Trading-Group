@@ -92,7 +92,7 @@
         </div>
     </section>    
         
-        <!----------Copyright------->
+    <!----------Copyright------->
     <footer class="copyright">
         <br><br>
         <ul class="icons">
@@ -103,10 +103,10 @@
         </ul>
         <br>
         <ul>
-            <li><p><a href="Documents/SAAGROEG-TRADING-GROUP-Privacy-Policy.pdf" target="_blank">Privacy Policy.</a></p></li>
-            <li><p><a href="Documents/SAAGROEG-TRADING-GROUP-Terms-of-use.pdf" target="_blank">Terms of Use.</a></p></li>
-            <li><p><a href="Documents/SAAGROEG-TRADING-GROUP-Regulatory-Compliance.pdf" target="_blank">Regulatory Compliance.</a></p></li>
-            <li><p><a href="Documents/SAAGROEG-TRADING-GROUP-FAQ.pdf" target="_blank">FAQ.</a></p></li>
+            <li><p><a href="#">Privacy Policy.</a></p></li>
+            <li><p><a href="#">Terms of Use.</a></p></li>
+            <li><p><a href="#">Regulatory Compliance.</a></p></li>
+            <li><p><a href="#">FAQ.</a></p></li>
         </ul>
         <p>&copy; 2023 SAAGROEG TRADING GROUP Pty Ltd. All Rights Reserved.</p>
     </footer>
@@ -147,7 +147,9 @@
             })
         </script>
         <script src="script.js" defer></script>
-        
+
+        <!-- SMTP js, library -->
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
     </body>
     
     <script type="module">
@@ -176,9 +178,8 @@
         const auth = getAuth();
         
         document.getElementById("send").addEventListener('click', function(e){
-            
             e.preventDefault();
-            
+
             set(ref(database, 'Queries/' + document.getElementById("name").value),{
                 name: document.getElementById("name").value,
                 email: document.getElementById("email").value,
@@ -186,11 +187,40 @@
                 message: document.getElementById("message").value
             })
             
-            alert("Your message was sent successfully!\n\nOne Of Our Consultant Will Contact You Via Email");
+            alert("Your message was sent successfully!\n\nCheck your emails for confirmation email\n\nAlso check under your spam emails");
             
+            //Calling email function 
+            SendEmailFeedback();
+
             document.getElementById("contactForm").reset();
         });
-        
+
+        function SendEmailFeedback() {
+            const toAddress = document.getElementById("email").value;
+            const userName = document.getElementById("name").value;
+            const breakLine = "<br>";
+
+            Email.send({
+                    Host : "smtp.elasticemail.com",
+                    Username: "khanyisanisithole771@gmail.com",
+                    Password: "DD93C74BF6774CFEDAE5C9F549B87EE1DC86",
+                    To: toAddress,
+                    From: "khanyisanisithole771@gmail.com",
+                    Subject: "You got a new message from STG team.",
+                    Body: "Hello, " + userName +"." + breakLine + breakLine + "Thank you for contacting us." + breakLine +
+                    breakLine + "We will get back to you as soon as possible within our working hours." 
+                    + breakLine + "If you still have further queries, stay in touch with our STG team for more help."
+                    + breakLine + breakLine + "Regards" + breakLine + "STG team."
+                }).then(function(res)
+                {
+                    console.log(res, "Email sent successfully.");
+                },function(err)
+                {
+                    console.log(err, "Sending email feedback has failed!");
+                }
+            )
+        }
+
         logout.addEventListener("click", (e) => {
            const auth = getAuth();
             
@@ -200,7 +230,6 @@
             }).catch((error) => {
                 // An error happened.
             }); 
-        });        
+        }); 
     </script>
-    
 </html>
